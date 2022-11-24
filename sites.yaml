@@ -1,0 +1,12 @@
+---
+
+- name: setup-web-server
+  gather_facts: true
+  hosts: web-servers
+  become: true
+  vars:
+     hostname: "{{ ansible_hostname }}"
+     ip: "{{ ansible_all_ipv4_addresses[0] }}"
+  roles:
+     - web-server-role
+

@@ -1,0 +1,7 @@
+[web-servers]
+54.197.174.1
+
+
+[all:vars]
+ansible_user = root
+ansible_port = 22
